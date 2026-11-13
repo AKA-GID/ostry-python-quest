@@ -9,5 +9,3 @@
 | 6.1 | [Средний балл](task-6-1-average/README.md) |
 | 6.2 | [Самый высокий и самый низкий](task-6-2-tallest-shortest/README.md) |
 | 6.3 | [Топ-3 игроков](task-6-3-top3/README.md) |
-
-Проверить задачу: `python check.py 6.1` (из корня репозитория), весь уровень: `python check.py 6`.
