@@ -22,7 +22,7 @@
 | `POST /api/submit` | отправить вычисленный ответ |
 | `GET /api/progress` | посмотреть общий прогресс команды |
 
-**Важно:** сервер настроен для 18 задач `1.1`–`6.3`. Он использует HTTP, поэтому не отправляйте пароли и личные данные. Документация закрытого администрирования и формат серверной конфигурации находятся в [server/README.md](server/README.md).
+**Важно:** сервер настроен для 18 задач `1.1`–`6.3`. Он использует HTTP, поэтому не отправляйте пароли и личные данные.
 
 ## Шаблон программы
 
@@ -62,45 +62,46 @@ print(result)
 
 ## Уровни
 
-| Уровень | Тема | Задач |
-|---|---|---:|
-| [1 · Первый укус](tasks/level-1-start/README.md) | ввод, вывод, арифметика | 3 |
-| [2 · Развилка](tasks/level-2-fork/README.md) | условия | 3 |
-| [3 · Разгон](tasks/level-3-speedup/README.md) | цикл `for` | 3 |
-| [4 · Пока не закипит](tasks/level-4-until-boil/README.md) | цикл `while` | 3 |
-| [5 · Двойной удар](tasks/level-5-double-hit/README.md) | вложенные циклы и строки | 3 |
-| [6 · Список острых](tasks/level-6-hot-lists/README.md) | списки | 3 |
+| Уровень | Острота | Тема | Задач |
+|---|:---:|---|---:|
+| [1 · Первый укус](tasks/level-1-start/README.md) | 🌶️ | ввод, вывод, арифметика | 3 |
+| [2 · Развилка](tasks/level-2-fork/README.md) | 🌶️ | условия | 3 |
+| [3 · Разгон](tasks/level-3-speedup/README.md) | 🌶️🌶️ | цикл `for` | 3 |
+| [4 · Пока не закипит](tasks/level-4-until-boil/README.md) | 🌶️🌶️ | цикл `while` | 3 |
+| [5 · Двойной удар](tasks/level-5-double-hit/README.md) | 🌶️🌶️🌶️ | вложенные циклы и строки | 3 |
+| [6 · Список острых](tasks/level-6-hot-lists/README.md) | 🌶️🌶️🌶️🌶️ | списки | 3 |
+
+Чем больше перчиков, тем сложнее уровень.
 
 ## Все задачи
 
-| ID | Задача |
-|---|---|
-| 1.1 | [Сдача](tasks/level-1-start/task-1-1-change/README.md) |
-| 1.2 | [Пицца на компанию](tasks/level-1-start/task-1-2-pizza/README.md) |
-| 1.3 | [Часы и минуты](tasks/level-1-start/task-1-3-hours-minutes/README.md) |
-| 2.1 | [Билет в кино](tasks/level-2-fork/task-2-1-cinema/README.md) |
-| 2.2 | [Какая оценка](tasks/level-2-fork/task-2-2-grade/README.md) |
-| 2.3 | [Високосный год](tasks/level-2-fork/task-2-3-leap-year/README.md) |
-| 3.1 | [Таблица умножения](tasks/level-3-speedup/task-3-1-times-table/README.md) |
-| 3.2 | [Шагомер](tasks/level-3-speedup/task-3-2-pedometer/README.md) |
-| 3.3 | [Обратный отсчёт](tasks/level-3-speedup/task-3-3-countdown/README.md) |
-| 4.1 | [Копилка](tasks/level-4-until-boil/task-4-1-piggy-bank/README.md) |
-| 4.2 | [Сколько цифр](tasks/level-4-until-boil/task-4-2-digits/README.md) |
-| 4.3 | [Бактерии в чашке](tasks/level-4-until-boil/task-4-3-bacteria/README.md) |
-| 5.1 | [Лесенка](tasks/level-5-double-hit/task-5-1-stairs/README.md) |
-| 5.2 | [Шахматная доска](tasks/level-5-double-hit/task-5-2-chessboard/README.md) |
-| 5.3 | [Гласные](tasks/level-5-double-hit/task-5-3-vowels/README.md) |
-| 6.1 | [Средний балл](tasks/level-6-hot-lists/task-6-1-average/README.md) |
-| 6.2 | [Самый высокий и самый низкий](tasks/level-6-hot-lists/task-6-2-tallest-shortest/README.md) |
-| 6.3 | [Топ-3 игроков](tasks/level-6-hot-lists/task-6-3-top3/README.md) |
+Чем больше перчиков, тем сложнее задача.
+
+| ID | Острота | Задача |
+|---|:---:|---|
+| 1.1 | 🌶️ | [Сдача](tasks/level-1-start/task-1-1-change/README.md) |
+| 1.2 | 🌶️ | [Пицца на компанию](tasks/level-1-start/task-1-2-pizza/README.md) |
+| 1.3 | 🌶️ | [Часы и минуты](tasks/level-1-start/task-1-3-hours-minutes/README.md) |
+| 2.1 | 🌶️ | [Билет в кино](tasks/level-2-fork/task-2-1-cinema/README.md) |
+| 2.2 | 🌶️ | [Какая оценка](tasks/level-2-fork/task-2-2-grade/README.md) |
+| 2.3 | 🌶️ | [Високосный год](tasks/level-2-fork/task-2-3-leap-year/README.md) |
+| 3.1 | 🌶️🌶️ | [Таблица умножения](tasks/level-3-speedup/task-3-1-times-table/README.md) |
+| 3.2 | 🌶️🌶️ | [Шагомер](tasks/level-3-speedup/task-3-2-pedometer/README.md) |
+| 3.3 | 🌶️🌶️ | [Обратный отсчёт](tasks/level-3-speedup/task-3-3-countdown/README.md) |
+| 4.1 | 🌶️🌶️ | [Копилка](tasks/level-4-until-boil/task-4-1-piggy-bank/README.md) |
+| 4.2 | 🌶️🌶️ | [Сколько цифр](tasks/level-4-until-boil/task-4-2-digits/README.md) |
+| 4.3 | 🌶️🌶️ | [Бактерии в чашке](tasks/level-4-until-boil/task-4-3-bacteria/README.md) |
+| 5.1 | 🌶️🌶️🌶️ | [Лесенка](tasks/level-5-double-hit/task-5-1-stairs/README.md) |
+| 5.2 | 🌶️🌶️🌶️ | [Шахматная доска](tasks/level-5-double-hit/task-5-2-chessboard/README.md) |
+| 5.3 | 🌶️🌶️🌶️ | [Гласные](tasks/level-5-double-hit/task-5-3-vowels/README.md) |
+| 6.1 | 🌶️🌶️🌶️🌶️ | [Средний балл](tasks/level-6-hot-lists/task-6-1-average/README.md) |
+| 6.2 | 🌶️🌶️🌶️🌶️ | [Самый высокий и самый низкий](tasks/level-6-hot-lists/task-6-2-tallest-shortest/README.md) |
+| 6.3 | 🌶️🌶️🌶️🌶️ | [Топ-3 игроков](tasks/level-6-hot-lists/task-6-3-top3/README.md) |
 
 ## Структура репозитория
 
 ```text
-README.md                         # общий порядок работы и формат API
-server/app.py                     # API и закрытые операции администратора
-server/README.md                  # документация сервера и администрирования
-server/tasks-private.example.json # безопасный пример формата; без ключей и ответов
+README.md                         # порядок работы и формат API
 tasks/<уровень>/README.md         # список задач уровня
 tasks/<уровень>/<задача>/README.md # условие, пример входа и пример ответа
 ```
