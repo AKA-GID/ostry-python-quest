@@ -1,0 +1,14 @@
+[
+  {
+    "input": "2024",
+    "output": "YES"
+  },
+  {
+    "input": "2023",
+    "output": "NO"
+  },
+  {
+    "input": "1900",
+    "output": "NO"
+  }
+]
