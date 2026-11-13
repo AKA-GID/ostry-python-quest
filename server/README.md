@@ -59,3 +59,44 @@ chmod 600 tasks-private.json
 Каждый элемент `tasks` имеет ровно четыре поля: уникальный `id`, объект `input`, объект `expected` и строковый `fragment`. Максимум — 20 задач. `contest_url_prefix` и `contest_url_suffix` обычно пустые, если полная ссылка разрезана на фрагменты.
 
 Сервис запускается из systemd как пользовательская служба `team-endpoint.service`. После обновления `app.py` перезапустите её командой `systemctl --user restart team-endpoint`.
+
+### Примеры админских запросов
+
+После создания SSH-туннеля задайте токен в переменной `ADMIN_TOKEN` в локальном терминале. Не вставляйте сам токен в Git, командный файл или сообщение ученикам.
+
+Сбросить одну задачу или весь командный прогресс:
+
+```sh
+curl -X POST http://127.0.0.1:18765/_admin/progress/reset \
+  -H "X-Admin-Token: $ADMIN_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"task_id":"3.2"}'
+
+curl -X POST http://127.0.0.1:18765/_admin/progress/reset \
+  -H "X-Admin-Token: $ADMIN_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"all":true}'
+```
+
+Добавить задачу (пример тела; замените ID, данные, точный ожидаемый объект и фрагмент):
+
+```sh
+curl -X POST http://127.0.0.1:18765/_admin/tasks \
+  -H "X-Admin-Token: $ADMIN_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"id":"extra-01","input":{"a":2,"b":4},"expected":{"sum":6},"fragment":"<private-fragment>"}'
+```
+
+Изменить или удалить задачу:
+
+```sh
+curl -X PUT http://127.0.0.1:18765/_admin/tasks/extra-01 \
+  -H "X-Admin-Token: $ADMIN_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"input":{"a":3,"b":4},"expected":{"sum":7},"fragment":"<private-fragment>"}'
+
+curl -X DELETE http://127.0.0.1:18765/_admin/tasks/extra-01 \
+  -H "X-Admin-Token: $ADMIN_TOKEN"
+```
+
+Изменение входа, ответа или фрагмента сбрасывает прогресс этой задачи. Удаление удаляет и её отметку о решении. Новые задачи добавляются в конец очереди; полный порядок фрагментов — порядок задач в списке конфигурации.
