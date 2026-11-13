@@ -3,3 +3,7 @@ __pycache__/
 .idea/
 .vscode/
 .DS_Store
+server/tasks-private.json
+server/progress.sqlite3*
+server/admin-token
+server/*.tmp
